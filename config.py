@@ -1,0 +1,12 @@
+# 连接数据库
+HOSTNAME = '127.0.0.1'
+PORT     = '3306'
+DATABASE = 'eb_flask'
+USERNAME = 'root'
+PASSEORD = '808080'
+DB_URI = 'mysql+pymysql://{}:{}@{}:{}?{}?charset=utf8'.format(USERNAME,PASSEORD,HOSTNAME,PORT,DATABASE)
+SQLALCHEMY_DATABASE_URI = DB_URI
+
+SQLALCHEMY_TRACK_MODIFICATIONS = True
+
+SECRET_KEY = 'heyiheyiheyi123456'
